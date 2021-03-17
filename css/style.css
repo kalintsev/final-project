@@ -1,0 +1,334 @@
+@font-face {
+    font-family: montserrat;
+    src        : url('../fonts/montserrat-light.ttf');
+    font-weight: 300;
+    font-style : normal;
+}
+
+@font-face {
+    font-family: raleway;
+    src        : url('../fonts/raleway-regular.ttf');
+    font-weight: 400;
+    font-style : normal;
+}
+
+@font-face {
+    font-family: raleway;
+    src        : url('../fonts/raleway-medium.ttf');
+    font-weight: 500;
+    font-style : normal;
+}
+
+@font-face {
+    font-family: raleway;
+    src        : url('../fonts/raleway-extrabold.ttf');
+    font-weight: 800;
+    font-style : normal;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width            : 1920px;
+    min-height       : 1024px;
+    margin           : 0;
+    box-sizing       : border-box;
+    background-image : url(../img/bg_photo.png);
+    background-repeat: no-repeat;
+    background-size  : cover;
+    background-color : rgba(17, 17, 17, 0.7);
+    position         : relative;
+    padding          : 35px;
+    display          : flex;
+    justify-content  : center;
+    align-content    : space-between;
+    flex-wrap        : wrap;
+}
+
+.container:after {
+    content   : '';
+    position  : absolute;
+    top       : 0;
+    left      : 0;
+    right     : 0;
+    bottom    : 0;
+    background: rgba(0, 0, 0, .5);
+    z-index   : 2;
+}
+
+.header_menu {
+    position       : relative;
+    z-index        : 3;
+    display        : flex;
+    justify-content: space-between;
+    width          : 1170px;
+    min-height     : 50px;
+}
+
+.logo {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    width           : 181px;
+    text-decoration : none;
+    background-color: #484642;
+    color           : #fff;
+    background-color: transparent;
+    margin-right    : 220px;
+}
+
+.logo-svg {
+    fill: currentColor;
+}
+
+.logo-txt {
+    font-family: raleway;
+    font-weight: 400;
+    font-style : normal;
+    font-size  : 34px;
+    text-align : right;
+}
+
+.logo:hover {
+    color: #998675;
+}
+
+.logo:active {
+    color: sandybrown;
+}
+
+.header_menu_list {
+    width       : 640px;
+    margin-right: 50px;
+}
+
+.header_menu_items {
+    display        : flex;
+    justify-content: space-between;
+}
+
+.header_menu_item {
+    list-style-type: none;
+}
+
+.header_menu_linc {
+    text-decoration: none;
+    text-transform : capitalize;
+    font-family    : montserrat;
+    font-size      : 14px;
+    line-height    : 1.2;
+    font-weight    : 300;
+    color          : #ffffff;
+}
+
+.header_menu_linc:hover {
+    color: #c7b299;
+}
+
+.header_menu_linc:active {
+    color: sandybrown;
+}
+
+.logo-basket-search-linc {
+    margin: auto;
+}
+
+.logo-basket-search-img {
+    fill: #fff;
+}
+
+.logo-basket-search-img:hover {
+    fill: #c7b299;
+}
+
+.logo-basket-search-img:active {
+    fill: sandybrown;
+}
+
+.carusel {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    width          : 1620px;
+    min-height     : 400px;
+    margin-bottom  : 30px;
+    z-index        : 4;
+}
+
+.carusel-btn {
+    display: block;
+    width  : 40px;
+    height : 40px;
+}
+
+
+.carusel-txt {
+    width          : 40%;
+    min-height     : 260px;
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.header-min {
+    font-family: raleway;
+    font-size  : 36px;
+    line-height: 1.2;
+    font-weight: 500;
+    font-style : normal;
+    color      : #ffffff;
+    text-align : center;
+}
+
+.header-max {
+    font-family: raleway;
+    font-size  : 52px;
+    line-height: 1.2;
+    font-weight: 800;
+    font-style : normal;
+    color      : #ffffff;
+    text-align : center;
+}
+
+.header-text {
+    font-family: montserrat;
+    font-size  : 16px;
+    line-height: 24px;
+    font-weight: 300;
+    font-style : normal;
+    color      : #ffffff;
+    text-align : center;
+}
+
+.heade_button {
+    text-decoration : none;
+    font-family     : raleway;
+    font-size       : 14px;
+    line-height     : 23px;
+    font-weight     : 800;
+    font-style      : normal;
+    text-transform  : uppercase;
+    color           : #ffffff;
+    width           : 170px;
+    height          : 53px;
+    background-color: #998675;
+    box-shadow      : inset 0px -3px 0px 0px #736357;
+    border-radius   : 3px;
+    text-align      : center;
+    padding         : 15px;
+    box-sizing      : border-box;
+    margin-top      : 52px;
+}
+
+.heade_button:hover {
+    color: #c7b299;
+}
+
+.heade_button:active {
+    color: sandybrown;
+}
+
+
+
+.carusel-btn {
+    display : block;
+    width   : 50px;
+    height  : 80px;
+    margin  : 0px;
+    position: relative;
+}
+
+.carusel-btn:first-child::after {
+    content  : "";
+    display  : block;
+    width    : 52px;
+    height   : 0px;
+    border   : 1px solid #9b9a98;
+    transform: rotate(-225deg);
+    position : absolute;
+    top      : 19px;
+    left     : 0;
+    opacity  : 0.5;
+}
+
+.carusel-btn:first-child::before {
+    content  : "";
+    display  : block;
+    width    : 52px;
+    height   : 0px;
+    border   : 1px solid #9b9a98;
+    transform: rotate(225deg);
+    position : absolute;
+    top      : 58px;
+    left     : 0;
+    opacity  : 0.5;
+}
+
+.carusel-btn:last-child::after {
+    content  : "";
+    display  : block;
+    width    : 52px;
+    height   : 0px;
+    border   : 1px solid #9b9a98;
+    transform: rotate(225deg);
+    position : absolute;
+    top      : 19px;
+    left     : 0;
+    opacity  : 0.5;
+}
+
+.carusel-btn:last-child::before {
+    content  : "";
+    display  : block;
+    width    : 52px;
+    height   : 0px;
+    border   : 1px solid #9b9a98;
+    transform: rotate(-225deg);
+    position : absolute;
+    top      : 58px;
+    left     : 0;
+    opacity  : 0.5;
+}
+
+.carusel-btn:hover::before,
+.carusel-btn:hover::after {
+    border: 1px solid #c7b299;
+}
+
+.carusel-btn:active::before,
+.carusel-btn:active::after {
+    border: 1px solid sandybrown;
+}
+
+
+.carusel-pagination {
+    display        : flex;
+    justify-content: center;
+    width          : 100%;
+    padding        : 5px 0;
+    z-index        : 5;
+}
+
+.carusel-pagination-item {
+    display         : block;
+    width           : 10px;
+    height          : 10px;
+    margin          : 0 5px;
+    border-radius   : 50%;
+    background-color: #8d8e91
+}
+
+.carusel-pagination-item:hover {
+    background-color: transparent;
+    border          : 1px solid #8d8e91;
+    box-sizing      : border-box;
+}
+
+.carusel-pagination-item:active {
+    background-color: transparent;
+    border          : 1px solid sandybrown;
+    box-sizing      : border-box;
+}
