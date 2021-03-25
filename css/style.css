@@ -1489,4 +1489,18 @@ body {
     font-style     : normal;
     color          : #555555;
     border-right   : 2px solid #252525;
+    padding-right  : 9px;
+}
+
+.footerbottom-link:last-child {
+    border-right : none;
+    padding-right: 0;
+}
+
+.footerbottom-link:hover {
+    color: #c7b299;
+}
+
+.footerbottom-link:active {
+    color: sandybrown;
 }
